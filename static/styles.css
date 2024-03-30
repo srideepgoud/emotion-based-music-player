@@ -1,0 +1,69 @@
+/* styles.css */
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#video {
+    width: 640px;
+    height: 480px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#capture-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#emotion-display {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#music-player {
+    margin-top: 20px;
+}
+
+/* Emotion animation classes */
+.happy-animation {
+    /* Add styles for happy animation */
+    font-size: 36px;
+    color: yellow;
+    animation: happy-animation 2s infinite alternate;
+}
+
+.sad-animation {
+    /* Add styles for sad animation */
+    font-size: 36px;
+    color: blue;
+    animation: sad-animation 2s infinite alternate;
+}
+
+.angry-animation {
+    /* Add styles for angry animation */
+    font-size: 36px;
+    color: red;
+    animation: angry-animation 2s infinite alternate;
+}
+
+/* Define keyframe animations for each emotion */
+@keyframes happy-animation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes sad-animation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+@keyframes angry-animation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(45deg); }
+}
